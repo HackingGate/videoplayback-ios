@@ -40,8 +40,8 @@ class VideoTableViewCell: UITableViewCell, VPKViewInCellProtocol {
             
             make.height.equalTo(250) //Ideally we would use an aspect ratio adjusted height based on data from json
         }
-        safeView.setContentHuggingPriority(UILayoutPriorityDefaultHigh, for: .horizontal)
-        setContentHuggingPriority(UILayoutPriorityDefaultHigh, for: .vertical)
+        safeView.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
+        setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
         self.setNeedsDisplay()
         
     }

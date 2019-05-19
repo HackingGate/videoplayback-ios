@@ -3,21 +3,21 @@ PODS:
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
   - ASValueTrackingSlider (0.12.1)
-  - RxCocoa (3.6.1):
-    - RxSwift (~> 3.6)
-  - RxSwift (3.6.1)
-  - SnapKit (3.2.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+  - SnapKit (4.2.0)
   - VideoPlaybackKit (0.2.3):
     - Alamofire (~> 4.4)
     - AlamofireImage (~> 3.1)
     - ASValueTrackingSlider
-    - SnapKit (~> 3.2.0)
+    - SnapKit (~> 4.0)
 
 DEPENDENCIES:
-  - RxCocoa (~> 3.0)
-  - RxSwift (~> 3.0)
-  - SnapKit (~> 3.0)
-  - VideoPlaybackKit
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0)
+  - VideoPlaybackKit (from `../VideoPlaybackKit.podspec`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -27,17 +27,20 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - SnapKit
-    - VideoPlaybackKit
+
+EXTERNAL SOURCES:
+  VideoPlaybackKit:
+    :path: "../VideoPlaybackKit.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   ASValueTrackingSlider: 5261de3fcf00adb339efc93885e8f0bc99e703cd
-  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  VideoPlaybackKit: b963b83ebfe80f002191fc3721eb596459174a1e
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  VideoPlaybackKit: 9defb014a74ba4ff508fe0474396cf251dea3fd4
 
-PODFILE CHECKSUM: 7711023fa61d1b2cf21f0d2f974ac75dcd944118
+PODFILE CHECKSUM: 3d7573804d6950236287ccb706a752f60fd605f7
 
 COCOAPODS: 1.6.2
