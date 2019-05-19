@@ -279,7 +279,6 @@
 				27CC14CA1F5DBBE100452C38 /* Frameworks */,
 				27CC14CB1F5DBBE100452C38 /* Headers */,
 				27CC14CC1F5DBBE100452C38 /* Resources */,
-				762A99ED2ED688D495FB2600 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,21 +365,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		762A99ED2ED688D495FB2600 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoPlaybackKit/Pods-VideoPlaybackKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A0E876696F14B158A9FFEF99 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -11,6 +11,13 @@ DEPENDENCIES:
   - ASValueTrackingSlider
   - SnapKit
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - ASValueTrackingSlider
+    - SnapKit
+
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
@@ -19,4 +26,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7686b8a79f49e02656a95d74b958788e1b8f92de
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.2
