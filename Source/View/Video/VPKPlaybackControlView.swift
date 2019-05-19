@@ -154,8 +154,8 @@ public class VPKPlaybackControlView: UIView {
             make.height.equalTo(5.0)
         }
         playbackProgressSlider.addTarget(self, action: #selector(didScrub), for: .valueChanged)
-        playbackProgressSlider.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: .horizontal)
-        playbackProgressSlider.setContentHuggingPriority(UILayoutPriorityDefaultHigh, for: .horizontal)
+        playbackProgressSlider.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
+        playbackProgressSlider.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
         
         
         bottomControlContainer.addSubview(durationLabel)
@@ -165,8 +165,8 @@ public class VPKPlaybackControlView: UIView {
         }
         durationLabel.textColor = UIColor(white: 1.0, alpha: 0.75)
         durationLabel.text = "0:00"
-        durationLabel.setContentCompressionResistancePriority(UILayoutPriorityDefaultHigh, for: .horizontal)
-        durationLabel.setContentHuggingPriority(UILayoutPriorityFittingSizeLevel, for: .horizontal)
+        durationLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultHigh, for: .horizontal)
+        durationLabel.setContentHuggingPriority(UILayoutPriority.fittingSizeLevel, for: .horizontal)
         
         
         addSubview(expandButton)
@@ -181,7 +181,7 @@ public class VPKPlaybackControlView: UIView {
         expandButton.setBackgroundImage(#imageLiteral(resourceName: "defaultExpand"), for: .normal)
         expandButton.addTarget(self, action: #selector(didTapExpandView), for: .touchUpInside)
         
-        bottomControlContainer.setContentHuggingPriority(UILayoutPriorityDefaultHigh, for: .horizontal)
+        bottomControlContainer.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .horizontal)
         
         
     }
@@ -214,14 +214,14 @@ extension VPKPlaybackControlView: VPKPlaybackControlViewProtocol {
         timeProgressLabel.text = time
     }
     
-    func didScrub() {
+    @objc func didScrub() {
         #if DEBUG
             print("USER SCRUBBED TO \(playbackProgressSlider.value)")
         #endif
         presenter?.didScrubTo(TimeInterval(playbackProgressSlider.value))
     }
     
-    func didTapExpandView() {
+    @objc func didTapExpandView() {
         presenter?.didExpand()
     }
     
@@ -232,7 +232,7 @@ extension VPKPlaybackControlView: VPKPlaybackControlViewProtocol {
         }
     }
     
-    func didTapPlayPause() {
+    @objc func didTapPlayPause() {
         presenter?.didTapVideoView()
     }
 }

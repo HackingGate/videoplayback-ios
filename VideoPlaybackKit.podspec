@@ -16,11 +16,11 @@ Pod::Spec.new do |spec|
 
   
   spec.ios.deployment_target = "10.0"
-  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
   
  spec.dependency "ASValueTrackingSlider"
  spec.dependency 'Alamofire', '~> 4.4'
  spec.dependency 'AlamofireImage', '~> 3.1'
- spec.dependency 'SnapKit', '~> 3.2.0'
+ spec.dependency 'SnapKit', '~> 4.0'
  
 end

@@ -130,8 +130,8 @@ public class VPKVideoView: UIView, UIGestureRecognizerDelegate  {
             make.edges.equalTo(self)
         }
         
-        safePlaybackBarView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: .horizontal)
-        safePlaybackBarView.setContentHuggingPriority(UILayoutPriorityDefaultHigh, for: .vertical)
+        safePlaybackBarView.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
+        safePlaybackBarView.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
     }
 }
 
@@ -146,7 +146,7 @@ extension VPKVideoView: VPKVideoViewProtocol {
         presenter?.didMoveOffScreen()
     }
     
-    internal func didTapView() {
+    @objc internal func didTapView() {
         presenter?.didTapVideoView()
     }
     
@@ -166,7 +166,7 @@ extension VPKVideoView: VPKVideoViewProtocol {
         self.playerLayer = playerLayer
         playerLayer.frame = self.bounds
         playerLayer.needsDisplayOnBoundsChange = true
-        playerLayer.videoGravity = AVLayerVideoGravityResizeAspect
+        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspect
         playerLayer.zPosition = -1.0
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
