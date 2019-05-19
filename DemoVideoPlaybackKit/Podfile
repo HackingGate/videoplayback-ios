@@ -3,9 +3,9 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'DemoVideoPlaybackKit' do
-	pod 'RxSwift' 
-	pod 'RxCocoa'
-	pod 'SnapKit'
+	pod 'RxSwift', '~> 3.0'
+	pod 'RxCocoa', '~> 3.0'
+	pod 'SnapKit', '~> 3.0'
 	pod 'VideoPlaybackKit'
 end
 

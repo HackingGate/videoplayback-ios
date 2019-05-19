@@ -222,7 +222,6 @@
 				272A1CDB1EAFE62F007F5816 /* Resources */,
 				272A1D351EAFF0EC007F5816 /* CopyFiles */,
 				F452070E7DB2F292706AEB29 /* [CP] Embed Pods Frameworks */,
-				11B3DA2FCD5590DFA322B273 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,21 +346,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11B3DA2FCD5590DFA322B273 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoVideoPlaybackKit/Pods-DemoVideoPlaybackKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E3BA80C1568E79DEC9BB9C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,7 +370,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DemoVideoPlaybackKit/Pods-DemoVideoPlaybackKit-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DemoVideoPlaybackKit/Pods-DemoVideoPlaybackKit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ASValueTrackingSlider/ASValueTrackingSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -407,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoVideoPlaybackKit/Pods-DemoVideoPlaybackKit-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoVideoPlaybackKit/Pods-DemoVideoPlaybackKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
